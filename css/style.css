@@ -11,7 +11,6 @@
 [class^=icon-], [class*=" icon-"] {
 	/* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "icomoon" !important;
-	speak: never;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -135,6 +134,7 @@ body.lock {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
+
 .main {
 	-webkit-box-flex: 1;
 	    -ms-flex: 1 0 auto;
