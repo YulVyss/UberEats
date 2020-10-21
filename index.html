@@ -6,9 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/15d034d677/UntitledProject/style.css"> -->
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 
@@ -142,7 +144,88 @@
 				<p><a href="/">Пользовательское соглашение</a></p>
 			</div>
 	</div>
-</footer>	</div>
+</footer><!-- отправка на почту -->
+<div id="popup_1" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__title">Это модальное окно №1</div>
+			<form action="#" class="call__popup popup-call form">
+				<div class="popup-call__body">
+					<h3 class="popup-call__title">Можете просто оставить заявку, я отвечу Вам в ближайшее время</h3>
+					<p class="result"></p>
+					<p><input type="text" class="popup-call__input input__text" placeholder="Ваше имя" name="name" tabindex="1"
+							required>
+					</p>
+					<p><input type="tel" class="popup-call__input input__tel" placeholder="Ваш телефон" name="tel" tabindex="2"
+							required>
+					</p>
+					<p><input type="submit" class="popup-call__submit" tabindex="3" value="Записаться">
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- отправка в Telegram канал -->
+<div id="popup_2" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__title">Это модальное окно №2</div>
+			<form action="telegram.php" class="call__popup popup-call form">
+				<div class="popup-call__body">
+					<h3 class="popup-call__title">Можете просто оставить заявку, я отвечу Вам в ближайшее время</h3>
+					<p class="result"></p>
+					<p><input type="text" class="popup-call__input input__text" placeholder="Ваше имя" name="name" tabindex="1"
+							required>
+					</p>
+					<p><input type="tel" class="popup-call__input input__tel" placeholder="Ваш телефон" name="tel" tabindex="2"
+							required>
+					</p>
+					<p><input type="mail" class="popup-call__input input__mail" placeholder="Ваш email" name="email" tabindex="3">
+					</p>
+					<p><input type="submit" class="popup-call__submit" tabindex="4" value="Записаться">
+					</p>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div id="popup_3" class="popup">
+	<div class="popup__body">
+		<div class="popup__content">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__title">Это модальное окно №3</div>
+			<div class="popup__text">
+				ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis
+				alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad,
+				omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad,
+				omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad,
+				omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad,
+				omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad,
+				omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad,
+				omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+			</div>
+		</div>
+	</div>
+</div>
+<div id="image" class="popup">
+	<div class="popup__body">
+		<div class="popup__content popup__content_image">
+			<a href="#header" class="popup__close close-popup">X</a>
+			<div class="popup__image">
+				<img src="img/1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+</div>	</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
