@@ -1,0 +1,132 @@
+.footer {
+  background: #262626;
+  padding: 50px 0 50px;
+  color: #fff;
+  a{color: #fff;}
+  // .footer__logo
+  &__logo {
+    border-bottom: 1px solid #757575;
+    padding: 0 0 35px;
+    a{
+      text-transform: uppercase;
+      font-size: 22px;
+      line-height: 30px;
+      letter-spacing: 4px;
+    }
+  }
+  .logo__green, .green{
+    color: #57AD56;
+  }
+  // .footer__body
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #757575;
+    padding: 25px 0 35px;
+  }
+  // .footer__links
+  &__links {
+    flex: 1 0 33.33%;
+  }
+  form{
+    margin: 0 0 40px;
+  }
+
+  &__select{
+    padding: 7px 10px 7px 40px;
+    background: url(../img/icons/world.svg) 10px 8px no-repeat, #3B3B3B;
+    width: 227px;
+    color: #fff;
+  }
+  &__hesh{
+    margin: 0 0 20px;
+  }
+  // .footer__link
+  &__link {
+    margin: 0 10px 0 0;
+  }
+  &__socials {
+    display: flex;
+
+  }
+  
+  // .footer__menu
+  &__menu {
+    flex: 1 0 33.33%;
+  }
+  // .footer__list
+  &__list {
+    list-style: none;
+    li{
+      margin: 0 0 25px;
+    }
+    li a{
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+  // .footer__item
+  &__item {
+  }
+  // .footer__downloads
+  &__downloads {
+    border-bottom: 1px solid #757575;
+    padding: 40px 0;
+    text-align: center;
+    a:first-of-type{
+      display: inline-block;
+      margin: 0 30px 0 0;
+    }
+  }
+  // .footer__privacy
+  &__privacy {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0;
+    p{
+
+    }
+    a{
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+  
+}
+
+
+.footer {
+  
+  
+  @media (max-width: $md3+px) {
+		&__body{
+      flex-wrap: wrap;
+      
+    }
+    &__links{
+      flex: 1 0 100%;
+    }
+    &__menu, &__links{
+      margin: 0 0 25px;
+    }
+	}
+	@media (max-width: $md4+px) {
+    &__body{
+      flex-direction: column;
+    }
+    &__privacy{
+      flex-direction: column;
+      p{
+        margin: 0 0 20px;
+      }
+      p:last-of-type{
+        margin: 0;
+      }
+    }
+	}
+	
+}
+
+//====================================================================================================
+
+//====================================================================================================

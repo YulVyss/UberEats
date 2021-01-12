@@ -1,0 +1,31 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = YulVyss
+	email = vyssotskaya.yulia@gmail.com
+[core]
+	quotepath = off
+[gui]
+	recentrepo = C:/Users/vysso/Desktop/web-development/Study/git_tutorial/git_tutorial/work
+	recentrepo = C:/Users/vysso/Desktop/web-development/Study/git_tutorial/git_tutorial/work/hello
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format: '%h %ad | %s%d [%an]' --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	gs = git
+	ga = git
+	gb = git
+	gc = git
+	gd = git
+	gco = git
+	gk = gitk
+	gx = gitx
+	got = git
+	get = git

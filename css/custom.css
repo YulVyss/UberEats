@@ -1,0 +1,10 @@
+.dark-mode {
+	background-color: #000000;
+	color: #ffffff;
+}
+.dark-mode p {
+	color: #ffffffff;
+}
+.dark-mode h2 {
+	color: #ffffff91;
+}

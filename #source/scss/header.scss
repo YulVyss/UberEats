@@ -1,0 +1,236 @@
+//====================================================================================================
+.header {
+	position: relative;
+	box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+	// .header__body
+	&__body {
+		@include flexbox;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 0;
+	}
+	// .header__logo
+	&__logo {
+		flex: 1 0 auto;
+		a {
+			font-size: 18px;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			letter-spacing: 2.3px;
+			.logo__green{
+				color: #57AD56;
+				margin: 0 0 0 3px;
+			}
+		}
+	}
+	&__buttons {
+
+	}
+	&__button {
+		background: transparent;
+		padding: 10px 15px;
+		border: 1px solid #E0E0E0;
+		margin: 0 30px 0 0;
+		a {color: #000; 
+			font-weight: 600;
+			font-size: 16px;;
+		}
+		&.dark-mode a{color: #fff}
+	}
+	&__cart {
+	background: #fff;
+	}
+	
+	@media (max-width: $md1+px) {
+	&__logo {
+			a {
+			font-size: 22px;
+		}
+	}	
+	&__phone{
+		font-size: 16px;
+	}
+	}
+	@media (max-width: $md2+px) {
+	
+	}
+	@media (max-width: $md3+px) {
+	&__menu{
+		order: -1;
+	}
+	}
+}
+.menu {
+	position: relative;
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		position: relative;
+		@include flexbox;
+		z-index: 6;
+		li {
+			margin: 0 20px 0 0;
+		}
+	}
+	// .menu__link
+	&__link {
+		color: #fff;
+		font-size: 18px;
+		font-family: $fontfamily;
+		font-weight: 500;
+	}
+	@media (max-width: $md1+px) {
+		&__link {
+			font-size: 16px;
+	}
+	}
+	@media (max-width: $md2+px) {
+	
+	}
+	@media (max-width: $md3+px) {
+	&__body {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	padding: 100px 20px;
+	
+	z-index: 3;
+	@include anim(0.5s, 0s);
+	}
+	&__body.active {
+			top: 0;
+		}
+	&__list{
+		flex-direction: column;
+		margin: 0 auto;
+		li{
+			margin: 20px auto 0;
+		}
+	}
+	}
+}
+
+//====================================================================================================
+
+.icon-menu {
+	display: none;
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 38px;
+	height: 24px;
+	cursor: pointer;
+	z-index: 6;
+	span {
+		@include anim(0.3s, 0s);
+		top: 10px;
+		left: 0px;
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		background-color: #fff;
+		&:first-child {
+			top: 0px;
+		}
+		&:last-child {
+			top: auto;
+			bottom: 0px;
+		}
+	}
+	&.active {
+		span {
+			@include scale(0);
+			&:first-child {
+				@include rotate(-45deg);
+				top: 10px;
+			}
+			&:last-child {
+				@include rotate(45deg);
+				bottom: 11px;
+			}
+		}
+	}
+	@media (max-width: $md1+px) {
+		
+	}
+	@media (max-width: $md2+px) {
+	
+	}
+	@media (max-width: $md3+px) {
+	display: block;
+	}
+		@media (max-width: $md4+px){
+width: 20px;
+	height: 18px;
+	span {
+			top: 8px;
+		left: 0px;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+		&:first-child {
+			top: 0px;
+		}
+		&:last-child {
+			top: auto;
+			bottom: 0px;
+		}
+	}
+	&.active {
+		span {
+			@include scale(0);
+			&:first-child {
+				@include rotate(-45deg);
+				top: 8px;
+			}
+			&:last-child {
+				@include rotate(45deg);
+				bottom: 8px;
+			}
+		}
+		}
+		}
+}
+//====================================================================================================
+
+.change-mode{
+	margin-right: 50px;
+	&__button{
+		position: relative;
+		width: 77px;
+		height: 41px;
+		border: 1px solid #E0E0E0;
+		border-radius: 20px;
+		background: #E0E0E0;
+		
+		&::after{
+			content: '';
+			width: 39px;
+			height: 39px;
+			border-radius: 50%;
+			background: #000000;
+			position: absolute;
+			left: 0;
+			top: 0;
+			transition: all 0.3s ease-out 0.1s;
+		}
+	
+		
+
+	}
+	.active.change-mode__button::after{
+		
+		left: calc(100% - 39px);
+		background: #ffffff;
+	
+	}
+}
