@@ -399,6 +399,12 @@ body.lock {
 		        order: -1;
 	}
 }
+@media (max-width: 479.98px) {
+	.header__button {
+		padding: 7px 10px;
+		margin: 0 15px 0 0;
+	}
+}
 
 .menu {
 	position: relative;
@@ -569,6 +575,34 @@ body.lock {
 .change-mode .active.change-mode__button::after {
 	left: calc(100% - 39px);
 	background: #ffffff;
+}
+@media (max-width: 479.98px) {
+	.change-mode {
+		margin-right: 15px;
+	}
+	.change-mode__button {
+		width: 48px;
+		height: 31px;
+		border: 1px solid #E0E0E0;
+		border-radius: 20px;
+		background: #E0E0E0;
+	}
+	.change-mode__button::after {
+		content: "";
+		width: 29px;
+		height: 29px;
+		border-radius: 50%;
+		background: #000000;
+		position: absolute;
+		left: 0;
+		top: 0;
+		-webkit-transition: all 0.3s ease-out 0.1s;
+		-o-transition: all 0.3s ease-out 0.1s;
+		transition: all 0.3s ease-out 0.1s;
+	}
+	.change-mode .active.change-mode__button::after {
+		left: calc(100% - 29px);
+	}
 }
 
 .footer {
